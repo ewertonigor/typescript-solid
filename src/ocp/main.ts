@@ -1,16 +1,16 @@
 import { Messaging } from './services/messaging';
-import { Order } from './entities/order';
+import { Order } from './class/order';
 import { Persistency } from './services/persistency';
-import { Product } from './entities/product';
-import { ShoppingCart } from './entities/shopping-cart';
-import { NoDiscount } from './entities/discount';
+import { Product } from './class/product';
+import { ShoppingCart } from './class/shopping-cart';
+import { FiftyPercentDiscount } from './class/discount';
 
 // Main -> Parte mais sujas do código
-// const fiftyPercentDiscount = new FiftyPercentDiscount();
 // const tenPercentDiscount = new TenPercentDiscount();
+// const noDiscount = new NoDiscount();
 
-const noDiscount = new NoDiscount();
-const shoppingCart = new ShoppingCart(noDiscount);
+const fiftyPercentDiscount = new FiftyPercentDiscount();
+const shoppingCart = new ShoppingCart(fiftyPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
 const order = new Order(shoppingCart, messaging, persistency);
