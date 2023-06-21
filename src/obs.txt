@@ -5,3 +5,6 @@ main -> Parte mais suja do código
 ->  Single Responsibility Principle (Princípio da responsabilidade única)
      - UMA CLASSE SÓ TEM UM E APENAS UM MOTIVO PARA MUDAR
      - A MINHA CLASSE SÓ DEVE TER APENAS UMA RESPONSABILIDADE
+
+-> Open/Closed Principle (Princípio do aberto/fechado)
+      - Entidades (Classes, Funções, Métodos), devem estar abertas para extensão mas fechadas para modificações.
