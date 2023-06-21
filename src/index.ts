@@ -1,3 +1,2 @@
-// Testando o Eslint
-const nome = 'teste';
-console.log(nome);
+//   Fazer o código do jeito que sabe
+// para depois aplicar os principios
