@@ -9,6 +9,10 @@ main -> Parte mais suja do código
 -> Open/Closed Principle (Princípio do aberto/fechado)
       - Entidades (Classes, Funções, Métodos), devem estar abertas para extensão mas fechadas para modificações.
 
---> Liskov Substitution Principle (Princípio da Substituição de Liskov)
+-> Liskov Substitution Principle (Princípio da Substituição de Liskov)
       - Subtipos precisam ser substituives por seus tipos de base.
       - Se meu programa espera um Animal, algo do tipo (Dog) -> (Que herda de Animal) deve servir como qualquer outro Animal.
+
+-> Interface Segregation Principle (Princípio da Segregação de Interfaces)
+      - Os clientes não devem ser forçados a depender de types, interfaces ou membros abstratos que não utilizam.
+
