@@ -4,6 +4,7 @@ import { Persistency } from './services/persistency';
 import { Product } from './class/product';
 import { ShoppingCart } from './class/shopping-cart';
 import { FiftyPercentDiscount } from './class/discount';
+import { IndividualCustomer } from './class/customer';
 
 // Main -> Parte mais sujas do código
 // const tenPercentDiscount = new TenPercentDiscount();
@@ -13,7 +14,22 @@ const fiftyPercentDiscount = new FiftyPercentDiscount();
 const shoppingCart = new ShoppingCart(fiftyPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
-const order = new Order(shoppingCart, messaging, persistency);
+const individualCustomer = new IndividualCustomer(
+  'Ewerton',
+  'Igor',
+  '716.038.294-31'
+);
+// const enterpriseCustomer = new EnterpriseCustomer(
+//   'Bussines Fort',
+//   '000.000.00-00/0001-00'
+// );
+
+const order = new Order(
+  shoppingCart,
+  messaging,
+  persistency,
+  individualCustomer
+);
 
 shoppingCart.addItem(new Product('Tênis', 699.99));
 shoppingCart.addItem(new Product('Moletom', 399.99));

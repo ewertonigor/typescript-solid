@@ -1,3 +1,8 @@
+export type CustomerOrder = {
+  getName(): string;
+  getIDN(): string;
+};
+
 export type IndividualCustomerProtocol = {
   firstName: string;
   lastName: string;
