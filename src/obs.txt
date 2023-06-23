@@ -16,3 +16,10 @@ main -> Parte mais suja do código
 -> Interface Segregation Principle (Princípio da Segregação de Interfaces)
       - Os clientes não devem ser forçados a depender de types, interfaces ou membros abstratos que não utilizam.
 
+-> Dependency Inversion Principle (Princípio da Inversão de Dependência)
+      - Módulos de alto nivel não devem depender de módulos de baixo nivel. Ambos devem depender de abstrações.
+      - Dependa de abstrações, não de implementações.
+      - Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
+
+      - Classes de baixo nível são classes que executam tarefas (os detalhes).
+      - Classes de alto nível são classes que gerenciam as classes de baixo nível.
